@@ -1,13 +1,92 @@
+<!--&copy; 2016 Flexible Forms. All Rights Reserved | Design by http://www.smallseashell.com.-- 小贝壳网站模板-->
+<!DOCTYPE html>
 <html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
 
-<head>
-  <title>Express</title>
-  <link rel="stylesheet" href="stylesheets/style.css">
-</head>
+    <!-- For-Mobile-Apps-and-Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Flexible Forms Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //For-Mobile-Apps-and-Meta-Tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      function onSetInFridge() {
+          var count = parseInt($("#itemCount").val())
+          for(var i=0;i<count;i++){
+              var n = i.toString();
+              var item="<input type='text' id="+"'item"+n+"'"+"class='item' name='item'  placeholder='item'>";
+              var amount = "<input type='number' id='amount"+n+"' class='amount' name='amount' placeholder='amount'>"
+              var unit = "Unit: <select id='unit"+n+"'> " +
+                  "<option value='of'>of</option>" +
+                  "<option value='grams'>grams</option>" +
+                  "<option value='ml'>ml</option>" +
+                  "<option value='slices'>slices</option>" +
+                  "</select></br></br>"
+              var useBy = "Use-By: <input type='date' id='date"+n+"' class = 'date' name='date' placeholder='used by'>"
+              var row = "<div class='row'>"+item+amount+unit+useBy+"</div>"
+              $("#fridge").after(row);
+          }
+          $("#setCount").hide();
+      }
 
-<body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
-</body>
+      function onSetforRecipe(){
+          var count = $("#recipesCount").val()
+          for(var i;i<count;i++){
+              var n = i.toString();
+              var name = "<input type='text' id='name' class='name' placeholder='Name'>";
 
+          }
+      }
+
+    </script>
+  </head>
+  <body>
+    <h1>Recipe Finder</h1>
+    <div class="container">
+      <div class="fridge">
+
+        <h3 id ="fridge">What is in your fridge ?</h3>
+        <!--<form action="#">-->
+        <div id = "setCount">
+          <input type="number" id = "itemCount" placeholder="How many item in fridge?">
+          <button onclick="onSetInFridge()">Confirm</button>
+        </div>
+          <div class="socialicons w3">
+            <h2>OR</h2>
+            <form id="upload-formJSON" method="post" enctype="multipart/form-data" >
+              　　　<input type="file" id="uploadJSON" name="upload" /> <br />
+            <!--</form>-->
+          </div>
+        </form>
+      </div>
+
+      <!--===========================================================================================================-->
+
+      <div class="recipe">
+        <h3 id ="recipes">What recipes we have ?</h3>
+        <form action="#" method="post">
+          <input type="number" id = "recipesCount" placeholder="How many recipes?">
+          <button onclick="onSetforRecipe()">Confirm</button>
+          <div class="clear"></div>
+          <div class="socialicons w3">
+            <h2>OR</h2>
+            <form id="upload-formCSV" method="post" enctype="multipart/form-data" >
+              　　　<input type="file" id="uploadCSV" name="upload" /> <br />
+            </form>
+          </div>
+        </form>
+      </div>
+      <div class="clear"></div>
+      <input type="submit" value="Submit">
+      <div class="footer-agilew3">
+
+      </div>
+    </div>
+  </body>
 </html>
