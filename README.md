@@ -24,7 +24,7 @@ The system allow users enter the items in fridge, and candidate recipes and reco
 npm start
 ```
 
-- The server system is deployed on a personal [Tencent Cloud](https://intl.cloud.tencent.com/) of developer.
+- The server system is deployed on a personal virtual machine from [Tencent Cloud](https://intl.cloud.tencent.com/) of developer.
 
 - Users are allowed to enter the amount of item in fridge and the amount of the recipe to custome amount of data. It is format free for users.
 
