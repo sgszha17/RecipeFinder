@@ -2,7 +2,6 @@
 This project is developed for code test of Pactera.
 The system allow users enter the items in fridge, and candidate recipes and recommend the recipe for dinner.
 
----
 ## Data
 
 #### Item in the fridge: -- represented by CSV list
@@ -19,7 +18,6 @@ The system allow users enter the items in fridge, and candidate recipes and reco
   - **Amount**: The amount of item.
   - **Unit**: The unit of measure.
 
----
 ## Running   
 -  To run the server, navigate to the directory of the project and run following command in terminal:
 ```
@@ -32,11 +30,9 @@ npm start
 
 - Then, users are able to enter the detail data.
 
----
 ## Developer     
 Siyu Zhang: paula555@outlook.com
 
----
 ## Copyright
 - NodeJS: [Node.js](https://nodejs.org/en/)
         [GitHub - nodejs/node: Node.js JavaScript runtime](https://github.com/nodejs/node)
@@ -48,7 +44,6 @@ Siyu Zhang: paula555@outlook.com
 UI is extended the template which is from: [小贝壳网站模板 (Template)](http://www.smallseashell.com)
 [Tencent Cloud](https://intl.cloud.tencent.com/)
 
----
 ## License
 - [Creative Commons Attribution 3.0 Unported | 小贝壳网站模板](http://creativecommons.org/licenses/by/3.0/)
 - [License | jQuery Foundation](https://jquery.org/license/)
