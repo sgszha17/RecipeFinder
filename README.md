@@ -42,7 +42,6 @@ Siyu Zhang: paula555@outlook.com
 - Test Tool: [Katalon Studio: Best automated testing tool for web, mobile, API](https://www.katalon.com/)
 - Resource:
 UI is extended the template which is from: [小贝壳网站模板 (Template)](http://www.smallseashell.com)    
-
 [Tencent Cloud](https://intl.cloud.tencent.com/)
 
 ## License
