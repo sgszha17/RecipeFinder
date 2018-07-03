@@ -1,6 +1,7 @@
 # Recipe Finder
 This project is developed for code test of Pactera.
-The system allow users enter the items in fridge, and candidate recipes and recommend the recipe for dinner.
+The system allow users enter the items in fridge, and candidate recipes and recommend the recipe for dinner.       
+It is based on express framework.
 
 ## Data
 
