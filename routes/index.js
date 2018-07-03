@@ -6,7 +6,6 @@ var recipes="";
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {title:"express"});
-  // console.log("ok")
 });
 
 router.post('/upload_data',function (req,res,next) {
@@ -62,7 +61,6 @@ function checkFridge(recipeItemList,fridgeThings){
             for (var n = 0; n < fridgeThings.length; n++) {
                 var thing = fridgeThings[n].split(",");
                 var checkTimeResult = checkTime(thing[USEBY]);
-                // console.log("time "+typeof (thing[USEBY]));
                 if (checkItem(item,thing[ITEM]) && (amount <= thing[AMOUNT])
                     && checkTimeResult[0] && thing[UNIT] == unit) {
                     canMade = true;
@@ -107,15 +105,11 @@ function checkItem(recipeItem,fridgeItem) {
 }
 
 function checkTime(usedby){
-    console.log("time "+usedby);
   var date = new Date();
   var udate = new Date(usedby);
-  console.log("usedby "+udate);
   if(date.getTime()<=udate.getTime()){
-      console.log("Current date: true");
     return [true,udate];
   }else {
-      console.log("Current date: f");
     return [false,""];
   }
 }

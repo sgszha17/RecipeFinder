@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://localhost:3000/')
+WebUI.navigateToUrl('http://localhost:8008/')
 
 WebUI.setText(findTestObject('RecipeFinderTestObject/Page_Recipe Finder/input_itemCount'), '5')
 

@@ -132,63 +132,6 @@ input[type="number"],input[type="date"],select{
   margin-bottom:15px;
   font-family: 'Open Sans', sans-serif;
 }
-/*input[type="password"]{*/
-  /*padding: 13px;*/
-  /*width: 93%;*/
-  /*background: #fff;*/
-  /*border: none;*/
-  /*outline: none;*/
-  /*margin-bottom:15px;*/
-/*}*/
-
-/*ul.check {*/
-  /*float: left;*/
-  /*margin:18px 0px;*/
-/*}*/
-/*ul.check li {*/
-  /*list-style: none;*/
-  /*display: inline-block;*/
-/*}*/
-/*ul.check li input[type="checkbox"] {*/
-  /*display: none;*/
-/*}*/
-/*ul.check li input[type="checkbox"]+label {*/
-  /*position: relative;*/
-  /*padding-left: 25px;*/
-  /*border: #F0F8FF;*/
-  /*color: #FFFFFF;*/
-  /*display: inline-block;*/
-  /*font-size: 13px;*/
-
-/*}*/
-/*ul.check li input[type="checkbox"]+label span:first-child {*/
-  /*width: 13px;*/
-  /*height: 13px;*/
-  /*display: inline-block;*/
-  /*border: 1px solid #FFFFFF;*/
-  /*position: absolute;*/
-  /*top: 1px;*/
-  /*left: 4px;*/
-  /*bottom: 4px;*/
-/*}*/
-/*ul.check li input[type="checkbox"]:checked+label span:first-child:before {*/
-  /*content: "";*/
-  /*!*background: url(../images/tick.png)no-repeat;*!*/
-  /*position: absolute;*/
-  /*left: 2px;*/
-  /*top: 2px;*/
-  /*font-size: 10px;*/
-  /*width: 10px;*/
-  /*height: 10px;*/
-/*}*/
-
-/*form a {*/
-  /*color: #EEE;*/
-  /*float: right;*/
-  /*font-size: 13px;*/
-  /*margin:20px 0;*/
-
-/*}*/
 input[type="submit"]{
   background: rgba(0, 188, 212, 0.54);
   color:#fff;
