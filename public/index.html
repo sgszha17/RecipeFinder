@@ -1,13 +1,39 @@
+<!--&copy; 2016 Flexible Forms. All Rights Reserved | Design by http://www.smallseashell.com.-- 小贝壳网站模板-->
+<!--Changed by: Siyu Zhang
+    Email: paula555@outlook.com-->
+<!--<!DOCTYPE html>-->
 <html>
+  <head>
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "javascripts/webAction.js"></script>
+  </head>
+  <body>
+    <h1>Recipe Finder</h1>
 
-<head>
-  <title>Express</title>
-  <link rel="stylesheet" href="stylesheets/style.css">
-</head>
+    <div class="container">
+      <div class="fridge">
+        <h3 id ="fridge">What is in your fridge ?</h3>
+        <div id = "setCount">
+          <input type="number" id = "itemCount" placeholder="How many item in fridge?">
+          <button id="fridgeConfirm" onclick="onSetInFridge()">Confirm</button>
+        </div>
+      </div>
 
-<body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
-</body>
+      <!--===========================================================================================================-->
 
+      <div class="recipe">
+        <h3 id ="recipes">What recipes we have ?</h3>
+        <div id = "setRecipesCount">
+          <input type="number" id = "recipesCount" placeholder="How many recipes?">
+          <button id="recipeConfirm" onclick="onSetforRecipe()">Confirm</button>
+        </div>
+          <div class="clear"></div>
+      </div>
+      <div class="footer-agilew3">
+
+      </div>
+    </div>
+  </body>
 </html>

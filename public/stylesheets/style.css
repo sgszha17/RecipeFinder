@@ -1,8 +1,188 @@
+/*--
+	Author: 小贝壳网站模板
+	Author URL: http://www.smallseashell.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+
+	Changed by: Siyu Zhang
+	Email: paula555@outlook.com
+--*/
+
+/*-- Reset-Code --*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{vertical-align:top;}/* vertical align top */
+nav.vertical ul li{display:block;}/* vertical menu */
+nav.horizontal ul li{display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*-- //Reset-Code --*/
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:url('../images/3.jpg') no-repeat 0px 0px;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  color:#fff;
+  font-size:50px;
+  margin:60px 0;
+  text-align:center;
+
+}
+.container{
+  width:65%;
+  margin:0 auto;
+}
+.fridge{
+  width:39%;
+  float:left;
+  margin-right:6%;
+  background:rgba(0, 0, 0, 0.28);
+  padding:4%;
+  box-shadow: 0 3px 18px 8px rgba(38, 24, 24, 0.25);
+  text-align:center;
+  position:relative;
+}
+input::-webkit-input-placeholder {
+    color: black;
+    font-size: 10px;
+}
+.recipe_Item,.recipeBox,.row{
+    margin-bottom: 5px;
+    padding:4%;
+    background:rgba(0, 0, 0, 0.45);
+    position:relative;
+    color: white;
+    text-align:left;
 }
 
-a {
-  color: #00B7FF;
+.recipe{
+  width:39%;
+  float:left;
+  padding:4%;
+  background:rgba(0, 0, 0, 0.28);
+  box-shadow: 0 3px 18px 8px rgba(38, 24, 24, 0.25);
+  text-align:center;
+  position:relative;
+}
+h2{
+    color:#fff;
+    font-size:40px;
+    text-align:center;
+    margin-bottom:20px;
+}
+h3{
+  color:#fff;
+  font-size:30px;
+  text-align:center;
+  margin-bottom:20px;
+}
+button{
+  background: rgba(0, 188, 212, 0.54);
+  color:#fff;
+  padding:10px 20px;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  margin-top:20px;
+  transition: 0.5s all;
+  webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  width:100%;
+  font-size:16px;
+  font-family: 'Open Sans', sans-serif;
+}
+input[type="text"]{
+  padding: 13px;
+  width: 93%;
+  background:#fff;
+  border: none;
+  outline: none;
+  margin-bottom:15px;
+  font-family: 'Open Sans', sans-serif;
+}
+input[type="number"],input[type="date"],select{
+  padding: 13px;
+  width: 93%;
+    height: 4%;
+  background:#fff;
+  border: none;
+  outline: none;
+  margin-bottom:15px;
+  font-family: 'Open Sans', sans-serif;
+}
+input[type="submit"]{
+  background: rgba(0, 188, 212, 0.54);
+  color:#fff;
+  padding:10px 20px;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  margin-top:20px;
+  transition: 0.5s all;
+  webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  width:100%;
+  font-size:16px;
+  font-family: 'Open Sans', sans-serif;
+}
+input[type="submit"]:hover{
+  background: #004550;
+}
+.alert-close, .alert-close1{
+  /*background: url('../images/into.png') no-repeat 0px 0px;*/
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  right: 20px;
+  top: 32px;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  z-index: 999;
+}
+.footer-agilew3{
+  margin:80px 0 20px 0;
+}
+.footer-agilew3 p{
+  text-align:center;
+  color:#fff;
+  font-size:14px;
+  line-height:27px;
+}
+.footer-agilew3 p a{
+  color:#fff;
+  transition: 0.5s all;
+  webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+.footer-agilew3 p a:hover{
+  text-decoration:underline;
 }
