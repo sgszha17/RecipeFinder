@@ -41,7 +41,8 @@ Siyu Zhang: paula555@outlook.com
 - Developing Tool: [WebStorm: The Smartest JavaScript IDE by JetBrains](https://www.jetbrains.com/webstorm/)
 - Test Tool: [Katalon Studio: Best automated testing tool for web, mobile, API](https://www.katalon.com/)
 - Resource:
-UI is extended the template which is from: [小贝壳网站模板 (Template)](http://www.smallseashell.com)
+UI is extended the template which is from: [小贝壳网站模板 (Template)](http://www.smallseashell.com)    
+
 [Tencent Cloud](https://intl.cloud.tencent.com/)
 
 ## License
@@ -49,3 +50,4 @@ UI is extended the template which is from: [小贝壳网站模板 (Template)](ht
 - [License | jQuery Foundation](https://jquery.org/license/)
 - [License | Node.js](https://raw.githubusercontent.com/nodejs/node/master/LICENSE)
 - [express/LICENSE at master · expressjs/express · GitHub](https://github.com/expressjs/express/blob/master/LICENSE)
+
